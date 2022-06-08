@@ -1,0 +1,81 @@
+/* reset */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+ul, li {margin:0;padding:0;list-style: none}
+
+
+:root {
+  --color-white: #fff;
+  --color-pink: rgb(251, 229, 236);
+  --color-bg: rgb(229, 234, 226);
+  --color-post-border: #ddd;
+  --color-hr: #ccc;
+  --color-txt: rgb(42, 84, 68);
+  --color-txt-link: #a221c2;
+  --color-txt-meta: #888;
+  --font-size-base: 10px;
+  --font-size-XS: 1rem;
+  --font-size-S: 1.2rem;
+  --font-size-M: 1.4rem;
+  --font-size-L: 2rem;
+  --font-size-XL: 3rem;
+  --font-size-XXL: 3.6rem;
+  --post-padding: 1.2em;
+  --post-margin: 1.2em;
+  --width-login: 30rem;
+  --width-comments: 54rem;
+  --width-content: 50rem;
+  --padding-bottom: 4rem;
+  --padding-content: 8px;
+}
+
+@media (min-width: 60em) {
+  :root {
+    --font-size-XS: 1rem;
+    --font-size-S: 1.2rem;
+    --font-size-M: 1.4rem;
+    --font-size-L: 2rem;
+    --font-size-XL: 3.5rem;
+    --font-size-XXL: 4.6rem;
+  }
+}
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-txt);
+  font-family: "Courier", "Courier New", monospace;
+  font-size: var(--font-size-M);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+main {
+  padding: 1em 1.5em;
+  margin: 0 auto;
+  max-width: var(--width-content);
+}
+@media (min-width: 60em) {
+  main {
+    padding: 4em;
+  }
+}
+
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: var(--color-txt);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.symbol {
+  font-size: 2.8em;
+}
